@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "cypress": "^13.16.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "save-dev": "^0.0.1-security"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": [
+      "cypress/e2e/StepDefinitions/**/*.ts"
+    ]
+  },
+  "html": {
+    "enabled": true
+  }
+}
